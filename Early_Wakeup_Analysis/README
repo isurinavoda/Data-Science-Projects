@@ -1,0 +1,17 @@
+RESEARCH QUESTION:
+Is early waking independently associated with better mental well-being and productivity outcomes, or is this relationship mediated by sleep quality, exercise habits, and other lifestyle factors?
+
+DATASET: Early Wakeup Health & Lifestyle Dataset (synthetic, 10,000 rows)
+
+WHAT THIS SCRIPT DOES, STEP BY STEP:
+1.  Load and inspect the data
+2.  Clean it (missing values, encode the target)
+3.  Explore it visually (EDA)
+4.  Test whether early wakers and non-early wakers differ statistically on
+    well-being / productivity outcomes (t-test / Mann-Whitney + effect size)
+5.  Run a formal MEDIATION ANALYSIS (Baron & Kenny approach + bootstrap) to
+    test whether sleep quality / exercise explain away the early-waking
+    effect, which is the actual core of the research question
+6.  Build a predictive model of Early_Waker as a secondary, supporting task
+    (feature importance tells us which lifestyle factors matter most)
+7.  Summarise everything in plain language at the end
